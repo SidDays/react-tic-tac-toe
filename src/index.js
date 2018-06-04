@@ -21,7 +21,7 @@ class Board extends React.Component {
   }
 
   handleClick(i) {
-    let squaresArr = this.state.squares;
+    let squaresArr = this.state.squares.slice();
     squaresArr[i] = 'X';
     this.setState({ squares: squaresArr });
   }
